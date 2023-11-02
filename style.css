@@ -1,0 +1,998 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+:root{
+    --cont1:#fcefc5;
+    --bodyandbtt:#334456;
+    --cont2:#ffd9ac;
+    --cards:#d0e4d9;
+    --video:#ebeaf2;
+    --cont3:#f4c6b7;
+}
+.checked {
+    color: orange;
+  }
+  body.dark-mode{
+    background-color: var(--bodyandbtt);
+    background-color: #333;
+    color: black;
+  }
+  body{
+    color: black;
+    position: relative;
+    width: 100%;
+    align-items: center;
+  }
+  /* start nav */
+  .aside-nav{
+    text-align: center;
+    padding: 300px;
+    transition: 0.5s;
+    background: var(--cont3);
+    z-index: 6;
+    left: 0;
+    border: 1px solid;
+    width: 25vw;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    height: 90vh;
+    padding: 10px;
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  
+  .aside-nav h2{
+    width: 100%;
+    font-size: 30px;
+    transition: 0.5s;
+
+  }
+  
+  .aside-nav .center {
+    display: flex;
+    
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .aside-nav .center ul a{
+    width: 100%;
+font-size: 30px;
+    color: black;
+    font-weight: 700;
+  }
+  .aside-nav .center ul,.aside-nav .center button{
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    flex-direction: column;
+    gap:15px;
+
+  }
+  .aside-nav .center ul li a{
+    transition: 0.3s;
+
+  }
+
+  .aside-nav .center button,.Explore,.cont3  button{
+    align-items: center;
+    margin-top: 5px;
+    font-weight: 700;
+    background-color:#fcefc5;
+    border: none;
+    transition: 0.3s;
+  }
+  .forms .cross:hover ,.forms .SignUp button:hover,.aside-nav h2:hover,.aside-nav .center button:hover ,.aside-nav .center ul li a:hover, .cont2 .bttn button:hover,.cont2 .cards .card1 button:hover,.Explore:hover,.cont3  button:hover{
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    background: #334456;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  /* end nav */
+
+  .iii{
+    position: absolute;
+    top: 0.2%;
+    left: 31%;
+    z-index: 7;
+    background-color:white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .iii:hover{
+    border: 1px solid #ebeaf2;
+    cursor: pointer;
+    background-color: #334456;
+  }
+
+  .cont1{
+    margin-top: 30px;
+    width: 1250px;
+    height: 600px;
+    margin-left:30% ;
+    border-radius:10px;
+  background: var(--cont1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 30px;
+
+}
+
+
+.cont1 img{
+    position: absolute;
+    right: 10px;
+    top:30px;
+    width: 450px;
+    border-radius: 15px;
+    height: 450px;
+}
+
+.cont1 .tit1{
+    position: absolute;
+    top:50px;
+    width: 640px;
+    color: rgba(13, 17, 19, 0.872);
+    font-size: 40px;
+}
+.cont1 .text1{
+    position: absolute;
+    top:40%;
+    width: 750px;
+    font-size: 10px;
+
+}
+
+.cont1 button , .cont1 .myicon{
+    position: absolute;
+    top:50%;
+
+}
+.cont1 .myicon{
+    left:15% ;
+}
+.cont1 button{
+    padding: 7px;
+    background-color: rgba(13, 17, 19, 0.872); ;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
+.cont1 button:hover{
+background-color: #ffd9ac;
+color: #334456;
+cursor: pointer;
+}
+
+.cont1 .enfo{
+    position: absolute;
+    top:60%;
+    width:750px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+.cont1 .cont1-footer{
+    position: absolute;
+    top:90%;
+    display: flex;
+    gap: 50px;
+    font-size: 10px;
+    width:1200px;
+    
+}
+.cont1 .cont1-footer .fa-meta{
+    display: inline-block;
+    width: 40px;
+   position: absolute;
+   width: 40px;
+   color: rgb(103, 138, 203);
+   bottom: 14px;
+   left: 41%;
+}
+
+.cont1 h1:nth-child(4){
+    color: red
+}
+.cont1 h1:nth-child(5){
+    color: rgb(2, 18, 52)
+}
+.cont1 h1:nth-child(6){
+    color: rgb(26, 37, 62)
+}
+.cont1 h1:nth-child(7){
+    color: rgb(25, 4, 185)
+}
+
+.between{
+  display: grid;
+  color: white;
+  grid-template-columns: auto auto auto;
+  gap: 70px;
+  position: relative;
+  font-size: 10px;
+  width: 1200px;
+  margin-top: 50px;
+  margin-left: 30%;
+}
+.between .icon1, .between .icon2 ,.between .icon3{
+  position: absolute;
+  top :5px;
+  left: -40px;
+  
+  padding: 11px;
+  
+  
+}
+.between .icon2{
+  left: 385px;
+
+}
+.between .icon3{
+  left: 790px;
+}
+
+/* end between */
+
+/* start cont 2 */
+
+.cont2{
+  margin-top: 30px;
+  width: 1250px;
+  text-align: center;
+  height: 1600px;
+  margin-left:30% ;
+  border-radius:10px;
+background: linear-gradient(to bottom ,#f4c6b7  ,var(--cards) 50% );
+display: flex;
+flex-direction: column;
+position: relative;
+padding: 30px;
+
+}
+.cont2 .sec1{
+  display: flex;
+  margin:150px 0px 100px 25px ;
+  gap: 34px;
+  
+}
+.cont2 .sec1 .seccard{
+  border: 1px solid #334456;
+  width: 200px;
+  height: 100px;
+  font-size: 17px;
+  padding-top: 30px;
+  border-radius: 8px;
+  background-color: #d0e4d9;
+  position: relative;
+  box-shadow: 3px 3px ;
+  
+}
+.cont2 .sec1 .seccard .icon{
+  position: absolute;
+  background-color: #334456;
+  top: -25px;
+  left: 30%;
+  padding: 25px;
+  border-radius: 40%;
+
+}
+
+.cont2 .sec2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 20px;
+  margin-bottom:30px ;
+}
+.cont2 .sec2 h1{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.cont2 .bttn{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+.cont2 .bttn button{
+  background-color: var(--cont1);
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 150px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+
+.cont2 .cards{
+  display: flex;
+  gap: 110px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+}
+
+
+.cont2 .cards .card1{
+  width: 25%;
+  height: 35%;
+  position: relative;
+  background-color: var(--cont1);
+  border-radius: 10px;
+  border: 1px solid #334456;
+}
+.cont2 .cards .card1  h1{
+  position: absolute;
+  top: 6px;
+  left: 8%;
+  color: red;
+}
+.cont2 .cards .card1 .progress{
+  position: absolute;
+  top: 15px;
+  left: 60%
+}
+
+.cont2 .cards .card1 h4{
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  
+}
+
+.cont2 .cards .card1 p{
+  position: absolute;
+  top: 50%;
+  left: 4%;
+
+}
+.cont2 .cards .card1 button{
+  width: 90%;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: var(--cont1);
+  position: absolute;
+  left: 5%;
+  border-radius: 10px;
+  bottom: 5px;
+  transition: 0.5s;
+}
+
+.cont2 .cards .card2  h1{
+  color: rgb(2, 18, 52)}
+
+  .cont2 .cards .card3  h1{
+    color: rgb(26, 37, 62)
+  }
+
+    .cont2 .cards .card4  h1{
+      color: rgb(25, 4, 185)}
+      .cont2 .cards .card5  h1{
+        color: rgb(2, 18, 52)}
+
+        .Explore,.cont3  button{
+          width: 20%;
+          font-size: 40px;
+          margin-left:40% ;
+          border-radius: 15px;
+          
+        }
+        /* end cont2 */
+
+  .cont3{
+    margin-top: 0px;
+    width: 1250px;
+    text-align: center;
+    height: 1400px;
+    margin-left:30% ;
+    border-radius:10px;
+  background: linear-gradient(to bottom ,var(--video)  ,var(--cont3) 90% );
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 30px;
+  }
+  .cont3 .ved{
+    width: 100%;
+  }
+
+  .cont3 .ved video{
+    margin-top: 70px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 4px 4px;
+
+  }
+
+  .cont3 .sec2{display: flex;
+  margin-top: 40px;
+  width: 70%;
+  margin-left:20% ;
+  margin-bottom: 80px;
+  }
+
+  .cont3 .card{
+    background-color: var(--cont1);
+    border-radius: 15px;
+    height: 550px;
+    font-size: 20px;
+    padding-top:7% ;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  .cont3 .card img{
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: -65px;
+    left: 40%;
+    border-radius: 50%;
+  }
+
+  .cont3  button{
+    margin-top: 10%;
+  }
+
+  /* end cont3 */
+
+  .footer{
+    margin-top: 0px;
+    width: 1250px;
+    box-shadow: 4px 4px black ;
+    background-color:#192f47;
+    height: 400px;
+    margin-left:30% ;
+    border-radius:10px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 5%;
+  color: white;
+  position: relative;
+  padding: 30px;
+  }
+
+  .footer .f1 h4{
+    margin-bottom: 50px;
+    font-size: 40px;
+    
+  }
+
+  .footer .list1{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer .lis1{
+    font-size: 30px;
+  }
+
+  .footer .f2 h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+    
+  }
+
+  .footer .f2 img{
+    width: 250px;
+    height: 70px;
+    border-radius: 15px;
+  }
+  /* end footer */
+ 
+  .forms .SignUp{ 
+    position: fixed;
+    width: 500px;
+    top: 30%;
+    left: -20%; 
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 4px 4px black ;
+    background-color:#fff;
+    height: 400px;
+    margin-left:60% ;
+    border-radius:10px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  
+ 
+  right: 0;
+  z-index: 100;
+  display: none;
+}
+
+.forms .SignUp .buttons{
+
+  border: 4px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.forms .SignUp h2{
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+
+  transition: 0.5s;
+  z-index: 2;
+
+}
+
+
+
+.forms .SignUp .buttons .move{
+  border: 1px solid;
+  position: absolute;
+background:linear-gradient(to right,blue ,white 90%);
+border-radius: 10px;
+width: 20%;
+z-index: 0;
+left: 122px;
+height: 57.5px;
+transition: 0.5s;
+}
+
+.forms .SignUp input{
+  margin: 5px;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+}
+.forms .SignUp button{
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.forms .cross{
+  position: absolute;
+  left:10px;
+  top: 10px;
+  transition: 0.5s;
+}
+.forms .cross:hover{
+  transform: rotate(360deg);
+}
+
+
+
+.cont button .circle i{margin-top: 10px;}
+
+.cont{
+  position: absolute;
+  width: 10%;
+}
+
+.cont button{
+  margin-left: 590px;
+  position: relative;
+  width: 140px;
+  height: 60px;
+  background: url("sky.jpg") no-repeat center;
+
+  background-size: cover;
+  border-radius: 30px;
+  border: none;
+  transition: .4s linear;
+  cursor: pointer;
+}
+
+.dark-mode .cont button{
+  background: url("night.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.circle{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 22px;
+  top: 8px;
+  left: 90px;
+  transition: .4s linear;
+}
+
+.dark-mode .circle{
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  background-color: rgba(51, 51, 51, .6);
+}
+
+.circle::before,
+.circle::after{
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  animation: waves 1s linear infinite;
+}
+
+.dark-mode .circle::before,
+.dark-mode .circle::after{
+  border: 1px solid #333;
+}
+
+.circle::after{
+  animation-delay: .5s;
+}
+
+@keyframes waves{
+  to{
+    transform: scale(1.4);
+    opacity: .3;
+  }
+}
+
+button i{
+  font-size: 22px;
+  line-height: 44px;
+  transition: .5s linear;
+}
+
+.dark-mode .button i{
+  transform: rotate(360deg);
+}
+
+.fa-sun{
+  color: #d4ac0d;
+}
+
+.fa-moon{
+  color: #eaf2f8;
+}
+
+
+@media screen and (max-width:700px) {
+ 
+
+
+  /* start nav */
+  .aside-nav{
+    text-align: center;
+   
+    width: 34vw;
+   
+    gap: 80px;
+   
+  }
+  
+  .aside-nav h2{
+    font-size: 25px;
+
+  }
+  .aside-nav .center ul a{
+font-size: 20px;
+   ;
+  }
+  
+  /* end nav */
+
+  .iii{
+    
+    left: 36%;
+   
+  }
+
+ 
+  .cont1{
+    width:  600px;
+    height: 1200px;
+    margin-left:35% ;
+  position: relative;
+  padding: 30px;
+
+}
+
+
+.cont1 img{
+    right: 120px;
+    top:120px;
+    width: 350px;
+    border-radius: 15px;
+    height: 350px;
+}
+
+.cont1 .tit1{
+    top:60px;
+    width: 640px ;
+    color : rgba(13, 17, 19, 0.872) !important;
+    font-size: 30px;
+}
+.cont1 .text1{
+    width: 550px;
+    font-size: 15px;
+
+}
+
+.cont1 button , .cont1 .myicon{
+    left: 30%;
+
+}
+.cont1 .myicon{
+    left:15% ;
+}
+.cont1 button{ 
+    width: 50%;
+}
+
+.cont1 .enfo{
+  top:62%;
+
+    grid-template-columns: 30% 30% 30%;
+
+}
+.cont1 .cont1-footer{
+
+    top:76%;
+   
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.cont1 .cont1-footer .fa-meta{
+   top: 60px;
+   left: 5%;
+}
+
+
+
+
+
+
+/* start cont 2 */
+
+.cont2{
+  width:  600px;
+  height: 3000px;
+  margin-left:35% ;
+position: relative;
+padding: 30px;
+
+}
+.cont2 .sec1{
+  display: flex;
+  flex-direction: column;
+  margin:50px 0px 100px 150px ;
+  
+}
+
+
+.cont2 .cards{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 3000px;
+  flex-wrap: nowrap;
+  width: 260%;
+  margin-left: 15%;
+}
+
+
+.Explore{
+  margin-top: 10%;
+}
+     .Explore,.cont3  button{
+       width: 40%;
+    font-size: 40px;
+   margin-left:30% ;
+  border-radius: 15px;
+          
+        }
+        /* end cont2 */
+
+  .cont3{
+    width:  600px;
+  height: 1100px;
+  margin-left:35% ;
+position: relative;
+padding: 30px;
+  }
+  
+
+  .cont3 .sec2{
+  width: 90%;
+  margin-left:10% ;
+  }
+
+  
+  .cont3 .card img{
+    width: 20%;
+    height: 20%;
+    top: -35px;
+    
+  }
+
+  .cont3  button{
+    margin-top: 10%;
+  }
+
+  /* end cont3 */
+
+  .footer{
+    width:  600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-left:35% ;
+  position: relative;
+  padding: 30px;
+  text-align: center;
+  }
+
+ 
+
+  .footer .list1{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* end footer */
+ 
+  .forms .SignUp{
+    
+   
+    top: 10%;
+    margin-left:34% ;
+   
+}
+
+
+
+
+
+.cont button .circle i{margin-top: 10px;}
+
+.cont{
+  position: absolute;
+  right: 130%;
+  top:10px;
+}
+
+.cont button{
+  margin-left: 590px;
+  position: relative;
+  width: 140px;
+  height: 60px;
+  background: url("sky.jpg") no-repeat center;
+
+  background-size: cover;
+  border-radius: 30px;
+  border: none;
+  transition: .4s linear;
+  cursor: pointer;
+}
+
+.dark-mode .cont button{
+  background: url("night.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.circle{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 22px;
+  top: 8px;
+  left: 90px;
+  transition: .4s linear;
+}
+
+.dark-mode .circle{
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  background-color: rgba(51, 51, 51, .6);
+}
+
+.circle::before,
+.circle::after{
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  animation: waves 1s linear infinite;
+}
+
+.dark-mode .circle::before,
+.dark-mode .circle::after{
+  border: 1px solid #333;
+}
+
+.circle::after{
+  animation-delay: .5s;
+}
+
+@keyframes waves{
+  to{
+    transform: scale(1.4);
+    opacity: .3;
+  }
+}
+
+button i{
+  font-size: 22px;
+  line-height: 44px;
+  transition: .5s linear;
+}
+
+.dark-mode .button i{
+  transform: rotate(360deg);
+}
+
+.fa-sun{
+  color: #d4ac0d;
+}
+
+.fa-moon{
+  color: #eaf2f8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
